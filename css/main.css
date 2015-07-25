@@ -69,27 +69,41 @@ textarea {
  Author's custom styles
  ========================================================================== */
 body {
-  background-color: #efefef;
+  background: black;
   color: #444444;
   font-family: 'jaf-bernino-sans-comp', sans-serif;
   margin: 0;
   padding: 0;
-  border: 10px #444444 solid;
   text-align: center;
 }
 
-.date {
+.nav-bar {
   color: #ffffff;
-  background-color: #444444;
+  background-color: #000000;
   width: 100%;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 25px;
   letter-spacing: 1px;
-  opacity: .9;
+  line-height: 1;
+  opacity: .4;
   position: fixed;
-  padding: 20px 0 10px;
+  padding: 10px 20px;
   top: 0;
   z-index: 10;
+}
+
+.logo {
+  width: 90%;
+  max-width: 400px;
+  margin-top: 75px;
+}
+
+.date {
+  float: right;
+}
+
+.navigation {
+  float: left;
 }
 
 a {
@@ -98,7 +112,7 @@ a {
 }
 
 .active {
-  color: #0081B2;
+  color: #ffffff;
   font-weight: bolder;
   text-decoration: underline;
 }
@@ -112,9 +126,6 @@ h1 {
   margin: 60px 0 0;
 }
 
-nav {
-  padding: 70px 0 20px;
-}
 
 nav ul {
   margin: 0;
@@ -129,9 +140,8 @@ nav ul li {
 
 li a {
   padding: 10px 2%;
-  color: #0081B2;
+  color: #ffffff;
   font-weight: 500;
-  font-size: 1.15em;
 }
 
 small {
@@ -143,11 +153,17 @@ small {
 
 section, article {
   padding: 3%;
-  max-width: 700px;
+  width: 100%;
   margin: 0 auto;
 }
 
+.main {
+  background: url(../images/main.jpg) no-repeat no-repeat center center;
+  background-size: cover;
+}
+
 p {
+  color: #bbbbbb;
   font-family: 'Adelle';
   font-size: 1.25em;
   text-align: left;
@@ -158,8 +174,7 @@ p {
 }
 
 footer {
-  background-color: #ffffff;
-  color: #444444;
+  color: #bbbbbb;
   padding: 20px 0 40px;
   margin-top: 90px;
 }
